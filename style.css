@@ -26,7 +26,6 @@ body{
     width: 30vw;
     min-height: 40vw;
     max-height: auto;
-    overflow: scroll;
     background-color: #61E294;
     border-radius: 8px;
     -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
@@ -140,6 +139,9 @@ body{
     font-weight: 1000;
     padding-right: 10px;
 }
+.current-tasks-wrapper::-webkit-scrollbar{
+    display: none;
+}
 
 .completed-tasks-wrapper{
     width: 100%;
@@ -155,7 +157,9 @@ body{
     padding-right: 10px;
 
 }
-
+.completed-tasks-wrapper::-webkit-scrollbar{
+    display: none;
+}
 .task{
     margin-top: 10px;
     display: flex;
