@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="shortcut icon" href="/img/icons8-task-50.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Roboto+Slab:wght@200&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-header">
+            Task Manager
+        </div>
+        <div class="add-task-container">
+            <div class="header">
+                Add Task
+            </div>
+            <div class="border-line"></div>
+            <div class="task-input">
+                <input data-userInput type="text">
+                <div class="add-button">
+                    <button data-addTask>+</button>
+                </div>
+            </div> 
+        </div>
+        <div class="current-task-container">
+            <div class="header">
+                Current Tasks
+                
+            </div>
+            <div class="border-line"></div>
+
+            <div data-currentTask class="current-tasks-wrapper">
+
+            </div>
+        </div>
+        <div data-complete class="completed-tasks-container">
+            <div class="header">
+                Completed Tasks
+                
+            </div>
+            <div class="border-line"></div>
+            <div class="completed-task-wrapper">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

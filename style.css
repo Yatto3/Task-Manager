@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hedvig Letters Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #7BCDBA;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    min-height: 40vw;
+    max-height: auto;
+    overflow: scroll;
+    background-color: #61E294;
+    border-radius: 8px;
+    -webkit-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
+    gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.main-container .main-header{
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    background-color: #4486af;
+    color: snow;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.add-task-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.header{
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    padding-left: 1vw;
+    font-size: 1.7vw;
+    padding: 10px;
+}
+
+.border-line{
+    width: calc(100% - 5%);
+    height: 0;
+    border: 1px solid rgba(63, 153, 163, 0.635);
+    margin-left: 1vw ;
+    border-radius: 4px;
+    /* margin-top: 1vw; */
+}
+.add-task-container .task-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    gap: 1vw;
+    margin-top: 1vw;
+    padding-left: 1vw;
+}
+
+.task-input > input{
+    width: 20vw;
+    height: 2vw;
+    outline: none;
+    border: 2px solid transparent;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(255, 250, 250, 0.7);
+    font-size: 1.4vw;
+    transition: 0.3s ease-in-out;
+}
+.task-input > input:focus{
+    border: 1px solid black;
+    background-color: snow;
+}
+
+.task-input > .add-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .add-button > button{
+    background-color: rgba(255, 250, 250, 0.7);
+    cursor: pointer;
+    width: 2.2vw;
+    height: 2.2vw;
+    border: 2px solid transparent;
+    border-radius: 10%;
+    outline:none;
+    font-weight: 1000;
+    transition: 0.2s ease-in;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.task-input > .add-button > button:hover{
+    transform: rotate(90deg);
+    border-radius: 50%;
+    background-color: snow;
+}
+.current-task-container{
+    width: 100%;
+    height: auto;
+}
+.current-tasks-wrapper{
+    width: 100%;
+    max-height: 14vw;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    font-weight: 1000;
+    padding-right: 10px;
+}
+
+.completed-tasks-wrapper{
+    width: 100%;
+    max-height: 14vw;
+    display: flex;
+    overflow: scroll;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    text-decoration: line-through;
+    font-weight: 1000;
+    padding-right: 10px;
+
+}
+
+.task{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: calc(100% - 5%);
+    /* border: 2px solid red; */
+    padding: 10px;
+    background-color: white;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.task-info{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-left: 10px;
+}
+.task > .buttons {
+    display: flex;
+    flex-direction: row;
+    /* width: 4vw; */
+    gap: 2rem;
+}
+.task > .buttons > #edit, #delete{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.2vw;
+}
+#edit:hover{
+    color: rgb(0, 208, 255);
+}
+#delete:hover{
+    color: red;
+}
+.border{
+    margin-top: 10px;
+    width: calc(100% - 5%);
+    margin-left: 10px;
+    height: 0;
+    border: 1px solid rgba(255, 255, 255, 0.347);
+}
+.new-input{
+    outline:none;
+    border: 2px solid transparent;
+    background-color: transparent;
+    width: 100%;
+}
